@@ -1,0 +1,33 @@
+/* Basic styling and dark theme */
+body { background:#121212; color:#fff; font-family:'Segoe UI', sans-serif; }
+.container { max-width:1000px; margin:20px auto; padding:20px; }
+header { text-align:center; margin-bottom:30px; }
+header .logo { width:80px; margin-bottom:10px; }
+header h1 { font-size:2.5em; color:#00ffd5; }
+header p { color:#a0a0a0; }
+
+/* Chat */
+.chat-card { background:#1f1f3a; padding:20px; border-radius:20px; margin-bottom:25px; }
+.chat-window { height:250px; overflow-y:auto; border-radius:15px; background:#2b2b50; padding:15px; margin-bottom:15px; }
+.chat-window::-webkit-scrollbar { width:8px; }
+.chat-window::-webkit-scrollbar-thumb { background:#00ffd5; border-radius:10px; }
+.message { padding:12px 18px; margin-bottom:12px; border-radius:15px; max-width:75%; font-size:0.95em; word-wrap:break-word; }
+.message.user { background:linear-gradient(120deg,#00ffd5,#00a3ff); color:#fff; margin-left:auto; }
+.message.bot { background:#3b3b6e; color:#fff; margin-right:auto; }
+.chat-input { display:flex; gap:10px; }
+.chat-input input { flex:1; padding:12px 15px; border-radius:12px; border:none; background:#2b2b50; color:#fff; }
+.chat-input input::placeholder { color:#888; }
+.chat-input button { padding:12px 20px; border:none; border-radius:12px; background:linear-gradient(120deg,#00ffd5,#00a3ff); color:#000; cursor:pointer; }
+
+/* Dashboard */
+.dashboard { margin-top:25px; }
+.card { background:#1f1f3a; padding:15px; border-radius:15px; margin-bottom:20px; }
+button { margin:5px; padding:10px 15px; border:none; border-radius:10px; cursor:pointer; }
+#playerStats { width:100%; border-collapse:collapse; margin-top:10px; background:#2b2b50; }
+#playerStats th, #playerStats td { padding:12px; text-align:center; }
+#playerStats th { background:linear-gradient(120deg,#00ffd5,#00a3ff); color:#000; }
+#playerStats tr:hover { background:rgba(0,255,213,0.2); }
+#impactGraph { display:flex; gap:10px; margin-top:15px; height:60px; align-items:flex-end; }
+.bar { width:35px; border-radius:8px; text-align:center; color:#fff; font-size:0.7em; display:flex; justify-content:center; align-items:flex-end; padding-bottom:2px; transition:0.3s; }
+.bar:hover { transform:scaleY(1.1); box-shadow:0 0 8px #00ffd5; }
+#matchScore { padding:15px; border-radius:15px; font-weight:bold; font-size:1.1em; }
